@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilos.css" rel="stylesheet">
+    <title>Currículo Personal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        video {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1><center>Currículo Personal</center></h1>
+    </header>
+
+    <section class="datosPersonales" >
+        <h2 tabindex="2"><center>Datos Personales</center></h2>
+        <div class="containercircle">
+            
+            <div class="circle">
+                <div class="inner-circle foto"></div>
+            </div>
+        </div>
+        <div class="informacion" tabindex="3">
+            <span id="name"><strong>Danna Feria</strong></span>
+            <span>Carapungo, Quito, Ecuador</span>
+            <span>30 julio 2001</span>
+            <span>dannaferiavega@gmail.com</span>
+        </div>
+    </section>
+
+    <section class="estudios" >
+        <h2 class="container" tabindex="4">Estudios</h2>
+        <table tabindex="5">
+            <thead>
+                <tr>
+                    <th>Año</th>
+                    <th>Institución</th>
+                    <th>Grado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2013 - 2019</td>
+                    <td>Colegio Fiscal "Gonzalo Zaldumbide"</td>
+                    <td>Bachillerato Abanderada del Pabellón Nacional 2018 - 2019</td>
+                </tr>
+                <tr>
+                    <td>2021 - 2022</td>
+                    <td>Centro de Educación Continua EPN</td>
+                    <td>Suficiencia Inglés Avanzado B2</td>
+                </tr>
+                <tr>
+                    <td>2019 - Actualidad</td>
+                    <td>Escuela Politécnica Nacional</td>
+                    <td>Ingeniería en Desarrollo de Software</td>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>Club de Software EPN</td>
+                    <td>Curso de Git y GitHub con terminal</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="video" tabindex="6">
+        <h2 class="container">Video de Presentación</h2>
+        <video controls tabindex="7">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section class="referencias" tabindex="8">
+        <h2 class="container">Referencias Personales</h2>
+        <p tabindex="9"><strong>Alejandro Llanganate</strong></p>
+        <p tabindex="10">alejandro.llanganate@gmail.com</p>
+    </section>
+
+</body>
+
+</html>

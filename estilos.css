@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #181818;
+    background-color: #020b2a;
+}
+h1{
+    color: #ffffff;
+    font-size: 50px;
+    padding: 20px;
+}
+h2{
+    font-size: 35px;
+    padding: 20px;
+}
+.datosPersonales{
+    background-color: #b7d8ed;
+    width: 1000px;
+    margin: 0 auto;
+    border-radius: 20px 20px 0px 0px;
+    padding: 20px 0px;
+    font-size: 20px;
+}
+#name{
+    font-size: 30px;
+}
+.containercircle{
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.foto{
+    background-image: url(foto.jpg);
+}
+.circle {
+    padding-top: 20px;
+    width: auto;
+    height: 300px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .inner-circle {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+  }
+  .circle img {
+    width: 50%;
+    height: 50%;
+    z-index: 1;
+  }
+  .informacion span{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .estudios{
+    background-color: #fafbff;
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+/* Estilos para centrar y limitar el ancho de la tabla */
+table {
+    margin: 0 auto; /* Centrar la tabla */
+    max-width: 600px; /* Establecer un ancho máximo */
+    font-size: 20px;
+}
+
+/* Estilos adicionales para mejorar la apariencia de la tabla */
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #85c5ed; /* Color de fondo para las celdas de encabezado */
+}
+td {
+    background-color: #ffffff; /* Color de fondo para las celdas de encabezado */
+}
+.video{
+    background-color: #b7d8ed;
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+.referencias{
+        background-color: #fafbff;
+        width: 960px;
+        margin: 0 auto;
+        border-radius: 0px 0px 20px 20px;
+        padding: 20px 20px;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+}
