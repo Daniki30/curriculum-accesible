@@ -1,43 +1,61 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
-body{
+
+body {
     margin: 0px;
+    line-height: 1.6;
     font-size: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #181818;
     background-color: #020b2a;
 }
-h1{
+
+h1 {
     color: #ffffff;
     font-size: 50px;
     padding: 20px;
+    text-align: center;
 }
-h2{
+
+h2 {
     font-size: 35px;
     padding: 20px;
+    text-align: center;
 }
-.datosPersonales{
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.datosPersonales {
     background-color: #b7d8ed;
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     margin: 0 auto;
     border-radius: 20px 20px 0px 0px;
     padding: 20px 0px;
     font-size: 20px;
 }
-#name{
+
+#name {
     font-size: 30px;
 }
-.containercircle{
+
+.containercircle {
     align-content: center;
     justify-content: center;
     align-items: center;
     display: flex;
 }
-.foto{
+
+.foto {
     background-image: url(foto.jpg);
 }
+
 .circle {
     padding-top: 20px;
     width: auto;
@@ -46,65 +64,200 @@ h2{
     justify-content: center;
     align-items: center;
     align-content: center;
-  }
-  .inner-circle {
+}
+
+.inner-circle {
     width: 270px;
     height: 270px;
     border-radius: 50%;
     background-size: cover;
     justify-content: center;
     align-items: center;
-  }
-  .circle img {
+}
+
+.circle img {
     width: 50%;
     height: 50%;
     z-index: 1;
-  }
-  .informacion span{
+}
+
+.informacion span {
     justify-content: center;
     align-items: center;
     display: flex;
-  }
-  .estudios{
+}
+
+.estudios {
     background-color: #fafbff;
     width: 960px;
     margin: 0 auto;
     padding: 20px 20px;
+    display: flex;
+    /* Utiliza Flexbox para centrar los elementos hijos */
+    flex-direction: column;
+    /* Organiza los elementos hijos en columna */
+    align-items: center;
+    /* Centra los elementos hijos horizontalmente */
 }
+
 /* Estilos para centrar y limitar el ancho de la tabla */
 table {
-    margin: 0 auto; /* Centrar la tabla */
-    max-width: 600px; /* Establecer un ancho máximo */
+    width: 100%;
+    max-width: 600px;
+    /* Ancho máximo de la tabla */
+    margin: 0 auto;
+    /* Centra la tabla */
     font-size: 20px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
 }
 
 /* Estilos adicionales para mejorar la apariencia de la tabla */
-th, td {
+th,
+td {
     border: 1px solid #ddd;
     padding: 10px;
     text-align: left;
+    overflow: hidden;
+    /* Asegura que el contenido que se sale se oculta */
+    text-overflow: ellipsis;
+    /* Añade puntos suspensivos al final del contenido oculto */
 }
 
 th {
-    background-color: #85c5ed; /* Color de fondo para las celdas de encabezado */
+    background-color: #85c5ed;
+    /* Color de fondo para las celdas de encabezado */
 }
+
 td {
-    background-color: #ffffff; /* Color de fondo para las celdas de encabezado */
+    background-color: #ffffff;
+    /* Color de fondo para las celdas de encabezado */
 }
-.video{
+
+.video {
+    width: 100%;
     background-color: #b7d8ed;
-    width: 960px;
     margin: 0 auto;
     padding: 20px 20px;
 }
-.referencias{
-        background-color: #fafbff;
-        width: 960px;
-        margin: 0 auto;
-        border-radius: 0px 0px 20px 20px;
-        padding: 20px 20px;
-        font-size: 20px;
-        align-items: center;
-        justify-content: center;
-        align-content: center;
+
+.referencias {
+    background-color: #fafbff;
+    width: 960px;
+    margin: 0 auto;
+    border-radius: 0px 0px 20px 20px;
+    padding: 20px 20px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.datosPersonales,
+.estudios,
+.video,
+.referencias {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    /* Asegura que el padding se incluya en el ancho total */
+}
+
+.video video {
+    width: 100%;
+    /* Asegura que el video no se salga de su contenedor */
+}
+
+/* Estilos para dispositivos pequeños */
+@media (max-width: 600px) {
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid #ccc;
+    }
+
+    td {
+        /* Cada celda se muestra como un bloque, similar a una lista */
+        border: none;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    th:before {
+        background-color: #85c5ed;
+    }
+
+    td:before {
+        /* Agrega el contenido del encabezado de la columna antes de cada celda */
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        /* Etiquetas personalizadas para cada celda */
+        content: attr(data-th)": ";
+    }
+}
+
+/* Consulta de medios para pantallas pequeñas (menos de 400px) */
+@media only screen and (max-width: 400px) {
+
+    .datosPersonales,
+    .estudios,
+    .video,
+    .referencias {
+        width: 100%;
+        padding: 10px;
+        /* Reduce el padding para evitar el espacio en blanco */
+    }
+}
+
+/* Consulta de medios para pantallas de tamaño mediano (tablets, 768px y más) */
+@media only screen and (min-width: 768px) {
+
+    .datosPersonales,
+    .estudios,
+    .video,
+    .referencias {
+        width: 750px;
+    }
+}
+
+/* Consulta de medios para pantallas de tamaño grande (desktops, 992px y más) */
+@media only screen and (min-width: 992px) {
+
+    .datosPersonales,
+    .estudios,
+    .video,
+    .referencias {
+        width: 970px;
+    }
+}
+
+/* Consulta de medios para pantallas de tamaño extra grande (grandes desktops, 1200px y más) */
+@media only screen and (min-width: 1200px) {
+
+    .datosPersonales,
+    .estudios,
+    .video,
+    .referencias {
+        width: 1170px;
+    }
 }
